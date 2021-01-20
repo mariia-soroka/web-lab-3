@@ -26,14 +26,14 @@ body {
 }
 
 .btn-primary {
-    color: darkslategrey;
+    color: rgb(211, 228, 228);
     background-color: black;
     border-color: black;
 }
 
 .btn-primary:hover {
     background-color: black !important;
-    color: lightslategrey !important;
+    color: white !important;
     border-color: black !important;
 }
 
@@ -130,4 +130,59 @@ span.btn.btn-fb:hover {
 footer {
     margin: 15px;
     padding: 15px;
+    color: lightgray;
 }
+
+.img-footer {
+    width: 50%;
+}
+
+form, .contact-submit {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+#contact {
+    color: lightgray;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.philosophy-img {
+    width: 50%;
+}
+
+.philosophy-text {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.philosophy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 70px;
+    color: lightgray
+}
+
+#philosophy {
+    color: lightgray;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+

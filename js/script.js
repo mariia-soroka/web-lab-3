@@ -11,3 +11,4 @@ async function fetchJson() {
     console.log(randomQuote);
 
 }
+

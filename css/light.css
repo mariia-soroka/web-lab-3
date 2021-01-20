@@ -12,7 +12,7 @@ header .container {
 }
 body {
     /* --main-color: black; */
-    background-color: black !important;
+    background-color: white !important;
     font-family: 'Open Sans', sans-serif !important;
 }
 
@@ -22,19 +22,19 @@ body {
 }
 
 .card col-12 col-sm-12 col-md-6 col-lg-6 text-center {
-    background: black !important;
+    background: white !important;
 }
 
 .btn-primary {
-    color: darkslategrey;
-    background-color: black;
-    border-color: black;
+    color: Gainsboro;
+    background-color: white;
+    border-color: white;
 }
 
 .btn-primary:hover {
-    background-color: black !important;
-    color: lightslategrey !important;
-    border-color: black !important;
+    background-color: white !important;
+    color: DarkSlateGrey !important;
+    border-color: white !important;
 }
 
 /* Container needed to position the button. Adjust the width as needed*/
@@ -57,16 +57,16 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  color: white;
+  color: black;
   font-size: 16px;
   font-weight: bold;
   padding: 8px 20px;
-  border-color: white;
+  border-color: black;
 }
 
 .title-image p {
   position: absolute;
-  color: white;
+  color: black;
   font-size: 30px;
   top: 60%;
   left: 50%;
@@ -75,8 +75,8 @@ body {
 }
 
 .card {
-    background: black !important;
-    color: white;
+    background: white !important;
+    color: black;
     font-size: 22px;
     line-height: 250%;
 }
@@ -89,24 +89,24 @@ body {
 
 .btn-primary.focus,
 .btn-primary:focus {
-    background: black;
-    border-color: black;
+    background: white;
+    border-color: white;
     box-shadow: 0 0 0 0rem;
 }
 
 
 .bg-dark {
-    background: black;
+    background: white;
 }
 
 span.btn.btn-fb {
-    background: black !important;
-    border-color: black;
-    color: blue;
+    background: white!important;
+    border-color: white;
+    color: LightBlue;
 }
 span.btn.btn-ins {
-    background: black !important;
-    border-color: black;
+    background: white !important;
+    border-color: white;
     color: red;
 }
 
@@ -122,7 +122,7 @@ span.author {
 }
 
 span.btn.btn-fb:hover {
-    border-color: black !important;
+    border-color: white !important;
     font-weight: bold !important;
     box-shadow: 0 0 0 0rem;
 }
