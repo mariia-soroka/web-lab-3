@@ -186,3 +186,26 @@ form, .contact-submit {
     margin-top: 20px;
 }
 
+.contact-table {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+
+}
+
+tr, td {
+    border-style: groove;
+    padding: 10px;
+    text-align: center;
+    color: lightgray
+}
+
+th {
+    border-style: hidden hidden groove hidden;
+    padding-bottom: 15px;
+}
+
+#hoverable:hover{
+    background-color:#cec6c66b;
+}    
+
