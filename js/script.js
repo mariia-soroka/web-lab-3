@@ -1,14 +1,8 @@
-document.querySelector('.fetch-quote').addEventListener('click', fetchJson);
-
-
-async function fetchJson() {
-    const response = await fetch('quote.json');
-    const data = await response.json();
-    const randomQuote = data[Math.floor(Math.random() * data.length)];
-    
-    document.querySelector('.quote').innerText = randomQuote.quoteText;  
-    document.querySelector('.author').innerText = randomQuote.quoteAuthor;
-    console.log(randomQuote);
-
-}
+var form = document.getElementById("form");
+form.addEventListener("focus", function( event ) {
+  event.target.style.background = "pink";
+}, true);
+form.addEventListener("blur", function( event ) {
+  event.target.style.background = "";
+}, true);
 
