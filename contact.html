@@ -100,25 +100,42 @@
     </main>
      <footer class="container">
         <div class="contact-page">
-        <form action="https://formspree.io/xpzrzndk" method="POST">
+        <form action="/action_page.php" name="form" onsubmit="return validateForm()" method="POST">
             <p>Or you can leave your message and we will contact you in 24 hours</p>
             <div class="form-group col-md-6">
+                <label for="exampleFormControlInput0">The reason of messaging</label>
+                    <div id="exampleFormControlInput0">
+                        <input type="checkbox" id="exampleFormControlInput01" name="question" value="question">
+                        <label for="question"> I have a question</label>
+                        <br>
+                        <input type="checkbox" id="exampleFormControlInput01" name="offer" value="offer">
+                        <label for="offer"> I have an offer</label>
+                        <br>
+                        <input type="checkbox" id="exampleFormControlInput01" name="appeal" value="appeal">
+                        <label for="appeal"> I have an appeal</label>
+                        <br>
+                        <input type="checkbox" id="exampleFormControlInput01" name="own" value="own">
+                        <label for="own"> I have an own reason</label>
+                    </div>
+            </div>
+            <div class="form-group col-md-6">
                 <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
             <div class="form-group col-md-6">
                 <label for="exampleFormControlInput1">Your name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="name">
+                <input type="text" name="name" class="form-control" id="exampleFormControlInput2" placeholder="name">
             </div>
             <div class="form-group col-md-6">
-                <label for="exampleFormControlTextarea1">Please eneter your message below</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="exampleFormControlTextarea1">Please enter your message below</label>
+                <textarea class="form-control" name="text" id="exampleFormControlTextarea3" rows="3"></textarea>
             </div>
             <div class="contact-submit">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Send">
             </div>
         </form>
             <img src="img/reflection.jpg" class="img-footer" alt="reflection">
         </div>
 </footer>
+<script src="js/valid.js"></script>
 </html>
