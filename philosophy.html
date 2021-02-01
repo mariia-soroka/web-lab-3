@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link type="text/css" rel="stylesheet" media="all" href="css/dark.css" id="theme_css" />
 </head>
     <header class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -38,6 +38,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="contact.html">CONTACT</a>
             </li>
+            <li>
+                <button onclick="switchTheme()">Switch Theme</button>
+            </li>
             </ul>
         </div>
         </nav>
@@ -45,12 +48,14 @@
 <main>
     <div class="container" id="philosophy"><h2>PHILOSOPHY</h2></div>
         <div class="philosophy">
-        <div class="philosophy-text">The philosophy of our art is to create inspirational abstract paintings that convey a sense of harmony, sophistication, 
+        <div class="philosophy-text"><p  id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">The philosophy of our art is to create inspirational abstract paintings that convey a sense of harmony, sophistication, 
             a certain intrigue and mystery, which everyone may solve and interpret in their own way. Our goal is to make the interior 
-            extraordinary, stylish and charge it with creative energy.</div>
-        <div class="philosophy-img"><img src="img/ghost.jpg" alt="ghost" class="d-block w-100"></div>
+            extraordinary, stylish and charge it with creative energy.</p></div>
+        <div class="philosophy-img"><img src="img/ghost.jpg" alt="ghost" class="d-block w-100" onmouseenter="bigImg(this)" onmouseleave="normalImg(this)"></div>
     </div>
 </main>
+    <script src="js/script.js"></script>
+    <script src="js/theme.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
